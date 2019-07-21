@@ -1,0 +1,15 @@
+name: VysteriaAuth
+main: org.vysteria.auth.Authentication
+version: 1.0
+author: Intelligence
+website: https://github.com/Intelligencee/VysteriaAuth
+
+commands:
+  auth:
+    description: Setup two-factor authentication.
+    usage: /auth
+    permission: vysteria.auth
+
+permissions:
+  vysteria.auth:
+    description: Permission to setup two-factor authentication

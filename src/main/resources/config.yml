@@ -1,0 +1,27 @@
+# VysteriaAuth made by Intelligence (https://github.com/Intelligencee/VysteriaAuth)
+# This plugin was made for Vysteria (https://www.vysteria.org)
+
+options:
+  max-tries: 3
+  deny-commands: true
+  deny-movement: true
+  deny-interaction: true
+  deny-damage: true
+messages:
+  login: '&a&l[!] &a&lPlease enter your two-factor-authentication code.'
+  fail-message: |
+    &4You were kicked for too many failed 2FA attempts.
+    &cPlease contact a system administrator if you no longer
+    &chave access to your mobile authenticator.
+  invalid-code: '&cInvalid code. Try again.'
+  valid-code: '&aYou have been authenticated.'
+  setup-already-enabled: '&cYou already have 2FA enabled on your account.'
+  setup-validate: '&a&lEnter your current passcode in chat to validate 2fa.'
+  setup-fail: '&c&l2fa setup invalidated, please try /auth again.'
+  setup-qrmap: |
+    &aYou have been given a map with your QR image on.
+    &aPlease use your mobile authenticator to scan this image.
+    &aAlteratively, enter this code into your authenticator: %code%
+  setup-code: |
+    &cAn error occurred while rendering your QR image.
+    &cPlease manually type this code in instead: %code%
